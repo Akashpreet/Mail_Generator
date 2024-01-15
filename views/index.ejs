@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Certificate of Appreciation</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f3f3f3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .certificate {
+        width: 650px;
+        height: 510px;
+        border: 8px solid #155d97;
+        border-radius: 15px;
+        padding: 40px;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        color: #333;
+        line-height: 1.6;
+      }
+      .certificate-header {
+        margin-bottom: 30px;
+      }
+      .certificate-header img {
+        max-width: 200px;
+      }
+      h2 {
+        color: #155d97;
+        margin-bottom: 20px;
+        font-size: 32px;
+      }
+      .details {
+        margin-bottom: 30px;
+      }
+      .details p {
+        margin: 15px 0;
+        font-size: 18px;
+      }
+      .director-signature {
+        text-align: right;
+        margin-top: 40px;
+      }
+      .director-signature img {
+        max-width: 150px;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="certificate">
+      <div class="certificate-header">
+        <h2>Certificate of Appreciation</h2>
+      </div>
+      <div class="details">
+        <p>This certifies that</p>
+        <p>
+          <strong><%=name %></strong><br />
+          Phone: <strong><%=mobile_number%></strong><br />
+          Email: <strong><%=email%></strong><br />
+          Has made a generous contribution of <strong><%=amount%></strong> to
+          our tree planting initiative, contributing to the planting of
+          <strong><%=number_of_trees%></strong> trees and demonstrating a
+          commendable commitment to environmental conservation and
+          sustainability.
+        </p>
+        <p>
+          Presented by the <strong>Forest Friends</strong> on behalf of our team
+          and with heartfelt gratitude from the Organization.
+        </p>
+        <p>
+          <strong>Akashpreet Singh<br />
+            Forest Friends</strong>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
